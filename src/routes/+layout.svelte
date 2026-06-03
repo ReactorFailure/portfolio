@@ -15,7 +15,7 @@
 			<ul class="sidebar-nav space-y-1 list-none font-bold">
 				<li><a href="/">Home</a></li>
 				<li><a href="/projects">Projects</a></li>
-<!--				<li><a href="/tools">Tools</a></li>-->
+				<li><a href="/tools">Tools</a></li>
 				<li><a href="/blog">Blog</a></li>
 				<li><a href="/chatroom">Chat room</a></li>
 			</ul>
@@ -35,9 +35,17 @@
 						@ReactorFailure
 					</a>
 				</div>
-				<p><a href="/#section-contact">Contact</a> | <a href="https://github.com/ReactorFailure/portfolio">Site Repo</a></p>
+				
+				<div class="flex items-center justify-center gap-2">
+					<a href="/#section-contact">Contact</a>
+					<span class="footer-divider"></span>
+					<a href="https://github.com/ReactorFailure/portfolio/blob/master/LICENSE">Site Repo</a>
+					<span class="footer-divider"></span>
+					<a href="/guestbook">Guestbook</a>
+				</div>
 			</div>
 			<p>Made with <a href="https://svelte.dev/" target="_blank">SvelteKit</a>, <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>, <a href="https://www.3dgifmaker.com/" target="_blank"> 3D Gif Maker</a>, <a href="https://www.getpaint.net/" target="_blank">Paint.NET</a>, Duct Tape, WD-40, and Hopes and Dreams</p>
+			<p><a href="https://github.com/ReactorFailure/portfolio" target="_blank">© 2026 - Licensed under Apache 2.0 License</a></p>
 		</footer>
 	</div>
 </div>

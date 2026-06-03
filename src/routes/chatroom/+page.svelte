@@ -3,7 +3,7 @@
 	
 	<script src="https://iframe.chat/scripts/main.min.js">
 		chattable.initialize({
-			stylesheet: "/static/css/chattable.css"
+			stylesheet: "/css/chattable.css"
 		});
 	</script>
 </svelte:head>

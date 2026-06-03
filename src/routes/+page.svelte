@@ -48,14 +48,21 @@
 	<div class="flex items-center justify-center gap-3 mt-3">
 		<a href="https://github.com/ReactorFailure" target="_blank" class="circle-btn bg-[#24292e]">
 			<span class="circle-btn-icon">
-				<img src="/github-icon.png" alt="Github Logo" width="35" height="35" />
+				<img src="/icons/github-icon.png" alt="Github Logo" width="35" height="35" />
 			</span>
 			<span class="circle-btn-label text-lg">Github</span>
 		</a>
 		
-		<a href="mailto: soup2soup@proton.me" target="_blank" class="circle-btn bg-[#0369a1]">
+		<a href="https://codeberg.org/ReactorFailure" target="_blank" class="circle-btn bg-[#01579b]">
 			<span class="circle-btn-icon">
-				<img src="/email-icon.png" alt="Email Icon" width="35" height="35" />
+				<img src="/icons/codeberg-icon.png" alt="Codeberg Logo" width="35" height="35" />
+			</span>
+			<span class="circle-btn-label">Codeberg</span>
+		</a>
+		
+		<a href="mailto: soup2soup@proton.me" target="_blank" class="circle-btn bg-[#00857f]">
+			<span class="circle-btn-icon">
+				<img src="/icons/email-icon.png" alt="Email Icon" width="35" height="35" />
 			</span>
 			<span class="circle-btn-label text-lg">Email</span>
 		</a>

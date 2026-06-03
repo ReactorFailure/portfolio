@@ -170,6 +170,15 @@ body {
     text-align: center;
 }
 
+.footer-divider {
+    display: inline-block;
+    width: 2px;
+    height: 12px;
+    background-color: black;
+    opacity: 0.4;
+    vertical-align: middle;
+}
+
 /** Underline hover stuff for footer **/
 .footer a {
     color: inherit;

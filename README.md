@@ -1,5 +1,5 @@
 # My portfolio site
-A work-in-progress personal portfolio site made using svelte, sveltekit, and tailwind. I will clean up everything later.
+A work-in-progress personal portfolio site made using svelte, sveltekit, and tailwind. I will clean up everything later. 
 
 ## Creating a project
 
