@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>ReactorFailure | Chat Room</title>
+	<title>Chat Room - ReactorFailure</title>
 	
 	<script src="https://iframe.chat/scripts/main.min.js">
 		chattable.initialize({

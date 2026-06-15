@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>ReactorFailure | Home</title>
+	<title>Home - ReactorFailure</title>
 </svelte:head>
 
 <section class="rounded-md shadow-md text-center p-5 mb-5 font-semibold bg-linear-to-b from-violet-700 to-indigo-950 to-95% text-white relative overflow-hidden">
@@ -16,7 +16,7 @@
 		</div>
 		<div class="pt-5">
 			<p class="mt-1 p-1">I'm ReactorFailure. I like to program sometimes as a hobby and try to learn new things.</p>
-			<p class="-mt-5">I have a DEC in Computer Science & Math and I am currently majoring in Accounting</p>
+			<p class="-mt-5">I have a degree in Computer Science & Math and I am currently majoring in Accounting</p>
 		</div>
 	</div>
 </section>
@@ -24,13 +24,13 @@
 <section>
 	<div class="flex item-center justify-center gap-2.5">
 		<div class="border-3 border-indigo-500 bg-indigo-50 rounded-md p-2 w-1/3 overflow-hidden">
-			<h1>Announcements</h1>
+			<h2>Announcements</h2>
 			<div>
 				<p>No announcements</p>
 			</div>
 		</div>
 		<div class="border-3 border-violet-500 bg-violet-50 rounded-md p-2 flex-1 overflow-hidden">
-			<h1>Blog Posts</h1>
+			<h2>Blog Posts</h2>
 			<div>
 				<p>No blog posts</p>
 			</div>
@@ -43,26 +43,26 @@
 	<div class="flex items-center justify-center -mt-0.5 mb-3">
 		<div class="h-2 bg-blue-500 w-24"></div>
 	</div>
-	<p>I rarely check these communication channels, I'll do my best to check my inbox</p>
+	<p>I rarely check these communication channels but I'll do my best to check my inbox</p>
 	
 	<div class="flex items-center justify-center gap-3 mt-3">
 		<a href="https://github.com/ReactorFailure" target="_blank" class="circle-btn bg-[#24292e]">
 			<span class="circle-btn-icon">
-				<img src="/icons/github-icon.png" alt="Github Logo" width="35" height="35" />
+				<img src="/icons/logo/github-icon.png" alt="Github Logo" width="35" height="35" />
 			</span>
 			<span class="circle-btn-label text-lg">Github</span>
 		</a>
 		
 		<a href="https://codeberg.org/ReactorFailure" target="_blank" class="circle-btn bg-[#01579b]">
 			<span class="circle-btn-icon">
-				<img src="/icons/codeberg-icon.png" alt="Codeberg Logo" width="35" height="35" />
+				<img src="/icons/logo/codeberg-icon.png" alt="Codeberg Logo" width="35" height="35" />
 			</span>
 			<span class="circle-btn-label">Codeberg</span>
 		</a>
 		
 		<a href="mailto: soup2soup@proton.me" target="_blank" class="circle-btn bg-[#00857f]">
 			<span class="circle-btn-icon">
-				<img src="/icons/email-icon.png" alt="Email Icon" width="35" height="35" />
+				<img src="/icons/logo/email-icon.png" alt="Email Icon" width="35" height="35" />
 			</span>
 			<span class="circle-btn-label text-lg">Email</span>
 		</a>
