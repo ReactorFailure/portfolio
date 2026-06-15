@@ -1,4 +1,4 @@
 <svelte:head>
-	<title>ReactorFailure | Projects</title>
+	<title>Projects - ReactorFailure</title>
 </svelte:head>
 <h1>Projects</h1>

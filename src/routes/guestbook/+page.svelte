@@ -1,4 +1,4 @@
 <svelte:head>
-	<title>ReactorFailure | Guestbook</title>
+	<title>Guestbook - ReactorFailure</title>
 </svelte:head>
 <h1>Soon (maybe)</h1>
