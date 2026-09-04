@@ -1,9 +1,13 @@
+/* Imports the Inter and Jetbrains Mono font from bunny.net. IK I can use Google fonts but bunny.net seems cool idk */
+@import url(https://fonts.bunny.net/css?family=inter:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|jetbrains-mono:400,400i,500,500i,600,600i,700,700i,800,800i);
+
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
 @theme {
-    --font-sans: Helvetica, Arial, sans-serif;
+    --font-sans: "Inter", Arial,sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
     --default-font-family: var(--font-sans);
 }
 
@@ -15,6 +19,17 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+/** Highlight stuff **/
+::-moz-selection { /** For Firefox (my beloved) and maybe for other gecko-based browsers **/
+    background: #615fff;
+    color: white;
+}
+::selection { /** For Chromium-based browsers **/
+    background: #615fff;
+    color: white;
+}
+
 
 /** Underline hover stuff for main content **/
 .main-content a {
