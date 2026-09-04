@@ -1,3 +1,18 @@
+<script>
+	import { onMount } from "svelte";
+
+	onMount(() => {
+		const script = document.createElement('script');
+		script.src = 'https://iframe.chat/scripts/main.min.js';
+		script.onload = () => {
+			chattable.initialize({
+				stylesheet: '/css/chattable.css'
+			});
+		};
+		document.head.appendChild(script);
+	});
+</script>
+
 <svelte:head>
 	<title>Home - ReactorFailure</title>
 </svelte:head>
@@ -38,33 +53,58 @@
 	</div>
 </section>
 
-<section id="section-contact" class="text-center mt-5 p-2 bg-[#e0e0e0] rounded-md font-semibold">
+<section id="section-contact" class="text-center mt-5 mb-5 p-2 bg-[#e0e0e0] rounded-md font-semibold">
 	<h1 class="contact">Contact</h1>
 	<div class="flex items-center justify-center -mt-0.5 mb-3">
 		<div class="h-2 bg-blue-500 w-24"></div>
 	</div>
-	<p>I rarely check these communication channels but I'll do my best to check my inbox</p>
+	<div class="pt-1">
+		<p class= "mt-1 p-1">I rarely check these communication channels but I'll do my best to check my inbox.</p>
+		<p class= "-mt-5">Alternatively, you might have a chance to talk to me on the chat room below.</p>
+	</div>
 	
 	<div class="flex items-center justify-center gap-3 mt-3">
 		<a href="https://github.com/ReactorFailure" target="_blank" class="circle-btn bg-[#24292e]">
 			<span class="circle-btn-icon">
-				<img src="/icons/logo/github-icon.png" alt="Github Logo" width="35" height="35" />
+				<img src="/icons/logo/github-icon.webp" alt="Github Logo" width="35" height="35" />
 			</span>
 			<span class="circle-btn-label text-lg">Github</span>
 		</a>
 		
 		<a href="https://codeberg.org/ReactorFailure" target="_blank" class="circle-btn bg-[#01579b]">
 			<span class="circle-btn-icon">
-				<img src="/icons/logo/codeberg-icon.png" alt="Codeberg Logo" width="35" height="35" />
+				<img src="/icons/logo/codeberg-icon.webp" alt="Codeberg Logo" width="35" height="35" />
 			</span>
 			<span class="circle-btn-label">Codeberg</span>
 		</a>
 		
 		<a href="mailto: soup2soup@proton.me" target="_blank" class="circle-btn bg-[#00857f]">
 			<span class="circle-btn-icon">
-				<img src="/icons/logo/email-icon.png" alt="Email Icon" width="35" height="35" />
+				<img src="/icons/logo/email-icon.webp" alt="Email Icon" width="35" height="35" />
 			</span>
 			<span class="circle-btn-label text-lg">Email</span>
 		</a>
+	</div>
+</section>
+
+<section class="flex flex-col items-center bg-[#e0e0e0] border-double border-10 border-amber-900 p-2">
+	<div class="bg-indigo-500 p-2 rounded-t-md text-cyan-300">
+		<h2>Useless Chatroom</h2>
+	</div>
+	<!-- svelte-ignore a11y_missing_attribute -->
+	<iframe
+		id="chattable"
+		class="w-full max-w-2xl h-[500px] border-indigo-500 border-5 rounded-b-md"
+		src="https://iframe.chat/embed?chat=test020202"
+	></iframe>
+	
+	<div>
+		<div>
+			
+		</div>
+		
+		<div>
+			
+		</div>
 	</div>
 </section>

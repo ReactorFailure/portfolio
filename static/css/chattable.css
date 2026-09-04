@@ -1,0 +1,257 @@
+@import url(https://fonts.bunny.net/css?family=jetbrains-mono:400,400i,500,500i,600,600i,700,700i,800,800i);
+
+body {
+    background: #2f3136;
+    border-radius: 5px;
+    font-family: "JetBrains Mono", monospace;
+}
+
+#top_banner {
+    display: none;
+}
+
+#input:empty::before {
+    content: "Send something to chat";
+    color: white;
+}
+
+#settingsMenu {
+    color: white;
+}
+
+#account {
+    background: oklch(55.4% 0.046 257.417);
+    color: white;
+}
+
+#input, #nameEntry {
+    color: #111;
+    background: oklch(55.4% 0.046 257.417);
+    border: none;
+    outline: none;
+    border: solid 1px #AAA;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+#textInput {
+    padding: 2px;
+    background: oklch(58.5% 0.233 277.117) !important; /** taken from tailwindcss **/
+}
+
+#timestamp {
+    background: #2f3136;
+    color: oklch(74.6% 0.16 232.661);
+    display: none;
+}
+
+.msgWrapper {
+    background: #2f3136;
+    border-bottom-radius: 5px;
+    align-items: center !important;
+    padding: 5px;
+}
+.msgWrapper:before {
+    all: unset !important;
+}
+.allMessages {
+    background: #2f3136;
+    display: block;
+    width: 100%;
+    color: white;
+    font-size: 10pt;
+    padding-right: 60px; 
+    border-radius: 2px;
+    max-width: calc(100vw - 62px);
+    border: outset 2px oklch(55.4% 0.046 257.417);
+    position: relative;
+    box-sizing: border-box;
+}
+
+.allMessages:after {
+    content: attr(time);
+    position: absolute;
+    bottom: 4px;
+    right: 6px;
+    font-size: 7pt;
+    color: oklch(74.6% 0.16 232.661);
+}
+
+.msgBody {
+    line-height: 1.6;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.senderInfo {
+    color: oklch(89.7% 0.196 126.665);
+    font-weight: bold;
+    position: relative;
+}
+.senderInfo:before {
+    content: "<\00a0";
+}
+.senderInfo:after {
+    content: "\00a0>";
+    display: inline-block;
+    height: 16px;
+    width: fit-content;
+}
+
+
+.highlight {
+    background: oklch(55.5% 0.163 48.998);
+    animation: none !important;
+    transition: none !important;
+}
+
+.allMessages.pm {
+    background: oklch(46.6% 0.025 107.3);
+    border: outset 2px oklch(60% 0.025 107.3);
+    font-style: italic;
+}
+.allMessages.pm::before {
+    content:"👻 Whisper message";
+    display: block;
+    font-size: 8pt;
+    color: oklch(74.6% 0.025 107.3);
+    font-style: italic;
+    padding: 2px 6px 0 6px;
+    letter-spacing: 0.05em;
+}
+
+/** Messages you sent **/
+.sent {
+    /*border: outset 2px oklch(55.4% 0.046 257.417);*/
+    border: outset 2px oklch(58.5% 0.233 277.117);
+}
+.sent::before {
+    content: "You";;
+    display: block;
+    font-size: 8pt;
+    color: oklch(74.6% 0.025 107.3);
+    font-style: italic;
+    padding: 2px 6px 0 6px;
+    letter-spacing: 0.05em;
+}
+
+/** When you want to reply to someone **/
+#replyBanner {
+    background: oklch(55.4% 0.046 257.417);
+    color: black;
+}
+
+/** Scroll to bottom type shit**/
+#scrollToBottom {
+    background: black !important;
+    font-size: 0 !important;
+}
+#scrollToBottom::before {
+    content: "Scroll to bottom" !important;
+    font-size: 10pt;
+}
+
+
+/** Mod tag **/
+.senderInfo:has(.mod) {
+    color: oklch(59.6% 0.145 163.225);
+}
+.allMessages:has(.mod)::before {
+    content: "\00a0\00a0\00a0\00a0\00a0 Mod";
+    display: block;
+    font-size: 8pt;
+    color: oklch(59.6% 0.145 163.225);
+    font-style: italic;
+    padding: 2px 6px 0 6px;
+    letter-spacing: 0.05em;
+    background-image: url("/static/logo.png");
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    background-position: 6px center;
+}
+.allMessages:has(.mod) {
+    border: outset 2px oklch(59.6% 0.145 163.225);
+}
+
+
+/** Owner tag **/
+.senderInfo:has(.owner) {
+    color: oklch(76.9% 0.188 70.08);
+}
+.allMessages:has(.owner)::before {
+    content: "\00a0\00a0\00a0\00a0\00a0 Owner";
+    display: block;
+    font-size: 8pt;
+    color: oklch(76.9% 0.188 70.08);
+    font-style: italic;
+    padding: 2px 6px 0 6px;
+    letter-spacing: 0.05em;
+    background-image: url("/static/logo.png");
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    background-position: 6px center;
+}
+.allMessages:has(.owner) {
+    border: outset 2px oklch(55.5% 0.163 48.998);
+}
+
+/** Beta tester tag **/
+.senderInfo:has(.beta) {
+    color: oklch(74.6% 0.16 232.661);
+}
+.allMessages:has(.beta)::before {
+    content: "\00a0\00a0\00a0\00a0\00a0 Mod";
+    display: block;
+    font-size: 8pt;
+    color: oklch(74.6% 0.16 232.661);
+    font-style: italic;
+    padding: 2px 6px 0 6px;
+    letter-spacing: 0.05em;
+    background-image: url("/static/logo.png");
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    background-position: 6px center;
+}
+.allMessages:has(.beta) {
+    border: outset 2px oklch(50% 0.134 242.749);
+}
+
+
+/** Priority **/
+.pinned {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    overflow: hidden;
+    cursor: default;
+}
+.pinned .allMessages {
+    border: 2px outset red;
+}
+.pinned .allMessages::before {
+    content: "📌 Pinned message";;
+    display: block;
+    font-size: 8pt;
+    color: oklch(74.6% 0.025 107.3);
+    font-style: italic;
+    padding: 2px 6px 0 6px;
+    letter-spacing: 0.05em;
+}
+/** Copied this from Chattable Amdroid demo CSS**/
+.pinned:before {
+    all: unset !important;
+}
+.pinned > .allMessages {
+    box-shadow: 0 0 3px #000;
+    width: 100%;
+    transition: opacity 250ms ease;
+}
+.pinned:hover > .allMessages {
+    opacity: 0.25;
+}
+.pinned > .allMessages::after {
+    display: none;
+}
+.pinned:after {
+    display: none;
+}

@@ -14,10 +14,9 @@
 		<nav>
 			<ul class="sidebar-nav space-y-1 list-none font-bold">
 				<li><a href="/">Home</a></li>
-				<li><a href="/projects">Projects</a></li>
-				<li><a href="/tools">Tools</a></li>
 				<li><a href="/blog">Blog</a></li>
-				<li><a href="/chatroom">Chat room</a></li>
+				<li><a href="/projects">My Projects</a></li>
+				<li><a href="/tools">Tools</a></li>
 			</ul>
 		</nav>
 	</aside>
@@ -41,7 +40,7 @@
 					<span class="footer-divider"></span>
 					<a href="https://github.com/ReactorFailure/portfolio/blob/master/LICENSE">Site Repo</a>
 					<span class="footer-divider"></span>
-					<a href="/guestbook">Guestbook</a>
+					<a href="https://boiledsoup.atabook.org" target="_blank"> AtaBook Guestbook</a>
 				</div>
 			</div>
 			<p>Made with <a href="https://svelte.dev/" target="_blank">SvelteKit</a>, <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>, <a href="https://www.3dgifmaker.com/" target="_blank"> 3D Gif Maker</a>, <a href="https://www.getpaint.net/" target="_blank">Paint.NET</a>, Duct Tape, WD-40, and Hopes and Dreams</p>
