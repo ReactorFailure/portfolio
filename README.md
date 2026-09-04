@@ -1,5 +1,21 @@
-# My portfolio site
+# Portfolio website
 A work-in-progress personal portfolio site made using svelte, sveltekit, and tailwind. I will clean up everything later. 
+
+## Credits
+**`stripped_bamboo_block.webp`**
+<br>
+Taken from Minecraft's textures
+<br>
+<br>
+**`cork-board.webp`**
+<br>
+Made by Petr Kratochvil
+Website: https://www.publicdomainpictures.net/en/view-image.php?image=25664&picture=cork-board
+<br>
+<br>
+**`Images in chat-icons dir`**
+<br>
+Taken from https://emoji.gg. All images still have their original ID and name.
 
 ## Creating a project
 
