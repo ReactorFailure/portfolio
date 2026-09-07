@@ -30,7 +30,7 @@
 			<div class="mb-5">
 				<div class="flex justify-center mb-1">
 					<a href="https://github.com/ReactorFailure" target="_blank" class="flex items-center gap-1">
-						<img src="/logo.png" alt="small logo" width="20" height="20"/>
+						<img src="/logo.webp" alt="small logo" width="20" height="20"/>
 						@ReactorFailure
 					</a>
 				</div>
