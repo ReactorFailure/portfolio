@@ -37,6 +37,13 @@ body {
 #textInput {
     padding: 2px;
     background: oklch(58.5% 0.233 277.117) !important; /** taken from tailwindcss **/
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 #timestamp {

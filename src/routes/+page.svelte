@@ -98,7 +98,3 @@
 		src="https://iframe.chat/embed?chat=test020202"
 	></iframe>
 </section>
-
-<section>
-	
-</section>

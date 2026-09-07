@@ -244,6 +244,11 @@ body {
     width: 100%;
 }
 
+#chattable {
+    display: block;
+    outline: none;
+}
+
 /* Firefox */
 * {
     scrollbar-width: thin;
