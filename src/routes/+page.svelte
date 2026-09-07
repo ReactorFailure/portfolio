@@ -87,8 +87,8 @@
 	</div>
 </section>
 
-<section class="flex flex-col items-center bg-[#e0e0e0] border-double border-10 border-amber-900 p-2">
-	<div class="bg-indigo-500 p-2 rounded-t-md text-cyan-300">
+<section id="chatroom" class="flex flex-col items-center bg-[#e0e0e0] p-2 bg-[url('/textures/stripped_bamboo_block.webp')] bg-repeat">
+	<div class="bg-indigo-500 p-2 rounded-t-md text-black">
 		<h2>Useless Chatroom</h2>
 	</div>
 	<!-- svelte-ignore a11y_missing_attribute -->
@@ -97,14 +97,8 @@
 		class="w-full max-w-2xl h-[500px] border-indigo-500 border-5 rounded-b-md"
 		src="https://iframe.chat/embed?chat=test020202"
 	></iframe>
+</section>
+
+<section>
 	
-	<div>
-		<div>
-			
-		</div>
-		
-		<div>
-			
-		</div>
-	</div>
 </section>

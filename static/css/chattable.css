@@ -79,14 +79,34 @@ body {
 
 .msgBody {
     line-height: 1.6;
-    padding: 5px;
+    padding: 5px 5px 5px 0;
     border-radius: 5px;
+    font-size: 0;
+    word-spacing: 0;
+    letter-spacing: 0;
+}
+.msgBody * {
+    font-size: 10pt;
+    word-spacing: normal;
+    letter-spacing: normal;
+}
+.msgBody p {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+.msgBody p * {
+    font-size: 10pt;
 }
 
 .senderInfo {
     color: oklch(89.7% 0.196 126.665);
     font-weight: bold;
     position: relative;
+}
+.senderInfo .mod.badge, .senderInfo .owner.badge, .senderInfo .beta.badge {
+    display: none;
 }
 .senderInfo:before {
     content: "<\00a0";
@@ -105,20 +125,6 @@ body {
     transition: none !important;
 }
 
-.allMessages.pm {
-    background: oklch(46.6% 0.025 107.3);
-    border: outset 2px oklch(60% 0.025 107.3);
-    font-style: italic;
-}
-.allMessages.pm::before {
-    content:"👻 Whisper message";
-    display: block;
-    font-size: 8pt;
-    color: oklch(74.6% 0.025 107.3);
-    font-style: italic;
-    padding: 2px 6px 0 6px;
-    letter-spacing: 0.05em;
-}
 
 /** Messages you sent **/
 .sent {
@@ -156,18 +162,35 @@ body {
 .senderInfo:has(.mod) {
     color: oklch(59.6% 0.145 163.225);
 }
+.senderInfo:has(.mod)::before {
+    content: "<\00a0";
+    position: static;
+    display: inline;
+    background-image: none;
+    width: auto;
+    height: auto;
+}
+.senderInfo:has(.mod)::after {
+    content: "\00a0>";
+    display: inline-block;
+    height: 16px;
+    width: fit-content;
+    margin-left: 4px;
+    background-image: url("https://github.com/ReactorFailure/portfolio/blob/master/static/icons/chat-icons/badge/2767-moderatoricon.webp?raw=true");
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: left center;
+    padding-left: 10px;
+}
 .allMessages:has(.mod)::before {
-    content: "\00a0\00a0\00a0\00a0\00a0 Mod";
+    content: "Moderator";
     display: block;
     font-size: 8pt;
-    color: oklch(59.6% 0.145 163.225);
+    color: oklch(74.6% 0.025 107.3);
     font-style: italic;
     padding: 2px 6px 0 6px;
     letter-spacing: 0.05em;
-    background-image: url("/static/logo.png");
-    background-repeat: no-repeat;
-    background-size: 12px 12px;
-    background-position: 6px center;
+    background-image: none;
 }
 .allMessages:has(.mod) {
     border: outset 2px oklch(59.6% 0.145 163.225);
@@ -176,48 +199,62 @@ body {
 
 /** Owner tag **/
 .senderInfo:has(.owner) {
-    color: oklch(76.9% 0.188 70.08);
+    color: oklch(74.6% 0.16 232.661);
+}
+.senderInfo:has(.owner)::before {
+    content: "<\00a0";
+    position: static;
+    display: inline;
+    background-image: none;
+    width: auto;
+    height: auto;
+}
+.senderInfo:has(.owner)::after {
+    content: "\00a0>";
+    display: inline-block;
+    height: 16px;
+    width: fit-content;
+    margin-left: 4px;
+    background-image: url("https://github.com/ReactorFailure/portfolio/blob/master/static/icons/chat-icons/badge/4323-blurple-verified-bot-developer.webp?raw=true");
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: left center;
+    padding-left: 10px;
 }
 .allMessages:has(.owner)::before {
-    content: "\00a0\00a0\00a0\00a0\00a0 Owner";
+    content: "Site Owner";
     display: block;
     font-size: 8pt;
-    color: oklch(76.9% 0.188 70.08);
+    color: oklch(74.6% 0.025 107.3);
     font-style: italic;
     padding: 2px 6px 0 6px;
     letter-spacing: 0.05em;
-    background-image: url("/static/logo.png");
-    background-repeat: no-repeat;
-    background-size: 12px 12px;
-    background-position: 6px center;
+    background-image: none;
 }
 .allMessages:has(.owner) {
-    border: outset 2px oklch(55.5% 0.163 48.998);
-}
-
-/** Beta tester tag **/
-.senderInfo:has(.beta) {
-    color: oklch(74.6% 0.16 232.661);
-}
-.allMessages:has(.beta)::before {
-    content: "\00a0\00a0\00a0\00a0\00a0 Mod";
-    display: block;
-    font-size: 8pt;
-    color: oklch(74.6% 0.16 232.661);
-    font-style: italic;
-    padding: 2px 6px 0 6px;
-    letter-spacing: 0.05em;
-    background-image: url("/static/logo.png");
-    background-repeat: no-repeat;
-    background-size: 12px 12px;
-    background-position: 6px center;
-}
-.allMessages:has(.beta) {
     border: outset 2px oklch(50% 0.134 242.749);
 }
 
 
 /** Priority **/
+
+/** Whisper message **/
+.allMessages.pm {
+    background: oklch(20.8% 0.042 265.755);
+    border: outset 2px oklch(60% 0.025 107.3);
+    font-style: italic;
+}
+.allMessages.pm::before {
+    content:"👻 Whisper message";
+    display: block;
+    font-size: 8pt;
+    color: oklch(74.6% 0.025 107.3);
+    font-style: italic;
+    padding: 2px 6px 0 6px;
+    letter-spacing: 0.05em;
+}
+
+/** Pinned message **/
 .pinned {
     position: sticky;
     top: 0;
@@ -254,4 +291,78 @@ body {
 }
 .pinned:after {
     display: none;
+}
+
+.senderInfo + pre {
+    margin: 0;
+    padding: 0;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.senderInfo + pre p {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.senderInfo + pre * {
+    font-size: 10pt;
+}
+
+.emoji {
+    width: 30px !important;
+    height: 30px !important;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.senderInfo + pre blockquote {
+    all: unset;
+    display: block;
+    color: #789922 !important;
+    font-size: 10pt;
+}
+
+.senderInfo + pre a {
+    color: oklch(74.6% 0.16 232.661) !important;
+    text-decoration: underline;
+    font-size: 10pt;
+}
+
+.senderInfo + pre a p:before {
+    content: "\003E";
+    margin-right: 3px;
+    display: inline-block;
+}
+
+.senderInfo + pre blockquote p:before {
+    content: "\003E";
+    margin-right: 3px;
+    display: inline-block;
+}
+
+.senderInfo + pre img:not(.emoji) {
+    display: block;
+    box-sizing: content-box;
+    position: relative;
+    margin-bottom: 16px;
+    overflow: visible;
+    overflow-clip-margin: unset;
+}
+
+.senderInfo + pre img:not(.emoji):after {
+    content: attr(src);
+    display: block;
+    color: #555;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 100;
+    text-align: center;
+    min-width: 100%;
+    font-size: 8pt;
 }

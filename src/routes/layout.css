@@ -149,6 +149,11 @@ body {
 .main-content h3 { font-size: 1.17rem; font-weight: bold;}
 .main-content p  { font-size: 1.1rem; margin-bottom: 1rem;}
 
+/** For some reason tailwind doesn't have the border ridge option **/
+#chatroom {
+    border: ridge 10px oklch(41.4% 0.112 45.904);
+}
+
 .circle-btn {
     display: inline-flex;
     align-items: center;
