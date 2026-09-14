@@ -63,10 +63,10 @@ body {
     height: 0.9em;
     margin-right: 3px;
     background-color: #615fff;
-    -webkit-mask-image: url("/icons/external_link.svg");
+    -webkit-mask-image: url("static/icons/svg/external_link.svg");
     -webkit-mask-size: contain;
     -webkit-mask-repeat: no-repeat;
-    mask-image: url("/icons/external_link.svg");
+    mask-image: url("static/icons/svg/external_link.svg");
     mask-size: contain;
     mask-repeat: no-repeat;
     vertical-align: middle;
